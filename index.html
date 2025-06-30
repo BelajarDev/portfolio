@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio | Rahmad Dio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/profile.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+</head>
+<body>
+
+  <!-- Partikel & Cursor -->
+  <div id="particles-js"></div>
+  <div class="cursor"></div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#projects">Proyek</a></li>
+      <li><a href="#keyboards">Gaming Gears</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+    <button id="darkModeToggle" class="dark-toggle">🌓</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <img src="assets/profile.jpg" alt="Foto Profil" class="profile-img">
+    <h1 class="title">Hai, Saya <span class="highlight">Rahmad Dio</span></h1>
+    <p class="subtitle">Frontend Developer • UI/UX Designer • Freelancer</p>
+    <div class="button-group">
+      <a href="#projects" class="btn">💼 Lihat Proyek</a>
+      <a href="assets/cv.pdf" class="btn-glow" download>📄 Unduh CV</a>
+    </div>
+  </header>
+
+  <!-- Projects -->
+  <section id="projects" class="projects-section">
+    <h2>🛠️ Proyek Saya</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Website Portfolio</h3>
+        <p>Membuat portfolio interaktif dengan animasi modern dan desain bersih.</p>
+      </div>
+      <div class="project-card">
+        <h3>Landing Page Produk</h3>
+        <p>Halaman promosi produk dengan animasi scroll dan desain responsif.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gaming Gears -->
+  <section id="keyboards" class="keyboard-section">
+    <h2>🎮 Gaming Gears</h2>
+    <div class="keyboard-grid">
+      <div class="keyboard-card" data-tilt>
+        <div class="keyboard-inner">
+          <img src="assets/keyboard1.png" alt="DualSense Controller">
+        </div>
+      </div>
+      <div class="keyboard-card" data-tilt>
+        <div class="keyboard-inner">
+          <img src="assets/keyboard2.png" alt="Xbox Controller">
+        </div>
+        <h3>Controller RGB</h3>
+        <button class="btn-keyboard">Show Details</button>
+      </div>
+      <div class="keyboard-card" data-tilt>
+        <div class="keyboard-inner">
+          <img src="assets/keyboard3.png" alt="PS4 Controller Purple">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact" class="contact-section">
+    <h2>📩 Kontak Saya</h2>
+    <p>Email: <a href="mailto:dioedit36@gmail.com">dioedit36@gmail.com</a></p>
+    <div class="social-icons">
+      <a href="https://github.com/rahmaddio" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/rahmaddio" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 RAHMAD DIO. Dibuat dengan ❤ dan semangat 🔥.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
